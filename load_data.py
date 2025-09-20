@@ -14,5 +14,8 @@ def load_to_csv(df, filename ="output.csv"):
 
 # Function two: Load data to JSON file
 def load_to_json(df, filename ="output.json"):
+    """
+    This function takes the cleaned and transformed dataframe and stores it as a json file
+    """
     df.to_json(filename, orient = "records", lines = True)
     print(f"Data saved to {filename}")
